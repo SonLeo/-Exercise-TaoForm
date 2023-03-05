@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Form</title>
+    <style>
+        .form-fieldset {
+            padding-left: 0;
+            margin-left: 0;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <form action="simpleForm.html" method="get">
+        <fieldset class="form-fieldset">
+            <label for="name">
+                Họ và tên:<br>
+                <input type="text" name="name" id="name">
+            </label>
+        </fieldset>
+
+        <fieldset class="form-fieldset">
+            <label for="email">
+                Email:<br>
+                <input type="email" name="email" id="email">
+            </label>
+        </fieldset>
+
+        <fieldset class="form-fieldset">
+            <label for="phone">
+                Số điện thoại:<br>
+                <input type="tel" name="phone" id="phone">
+            </label>
+        </fieldset>
+
+        <fieldset class="form-fieldset">
+            Giới tính:<br>
+            <label for="male">
+                <input type="radio" name="gender" id="male" checked>
+                Nam
+            </label>
+            <label for="female">
+                <input type="radio" name="gender" id="female">
+                Nữ
+            </label>
+        </fieldset>
+        <input type="submit" value="Đăng ký">
+    </form>
+</body>
+</html>
